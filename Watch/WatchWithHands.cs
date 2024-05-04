@@ -17,7 +17,7 @@ namespace Watch
                 Console.WriteLine(360 * 12 - (currentMin - realMin) * 6);
                 return;
             }
-            Console.WriteLine((realMin - currentMin) * 6);
+            Console.WriteLine($"Стрелку необходимо повернуть на: {(realMin - currentMin) * 6} градусов");
         }
     }
 }

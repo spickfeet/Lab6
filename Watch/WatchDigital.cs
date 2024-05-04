@@ -10,7 +10,7 @@ namespace Watch
     {
         public void GetTimeSettings(Time currentTime, Time realTime)
         {
-            Console.WriteLine($"Переведите часы на:\n{realTime.Hour - currentTime.Hour} часов\n{realTime.Minute - currentTime.Minute} минут");
+            Console.WriteLine($"Переведите часы на:\n{realTime.Hour - currentTime.Hour} часов(а)\n{realTime.Minute - currentTime.Minute} минут(ы)");
         }
     }
 }
