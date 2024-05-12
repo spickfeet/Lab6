@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Watch
+﻿namespace Watch
 {
+    /// <summary>
+    /// Общий интерфейс для настроек часов.
+    /// </summary>
     public interface ITimeSettings
     {
         public void GetTimeSettings(Time currentTime, Time realTime);

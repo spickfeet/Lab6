@@ -1,15 +1,13 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Watch
+﻿namespace Watch
 {
+    /// <summary>
+    /// Класс хранящий время.
+    /// </summary>
     public class Time
     {
         private int _hour;
         private int _minute;
+        
         public int Minute
         {
             get { return _minute; }

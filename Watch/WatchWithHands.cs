@@ -1,13 +1,15 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Watch
+﻿namespace Watch
 {
+    /// <summary>
+    /// Класс настроек стрелочных часов.
+    /// </summary>
     public class WatchWithHands
     {
+        /// <summary>
+        /// Настройка стрелочных часов, возвращяет угол поворота минутной стрелки для настройки времени.
+        /// </summary>
+        /// <param name="currentTime"></param>
+        /// <param name="realTime"></param>
         public void GetAngleOfRotation(Time currentTime,Time realTime)
         {
             int currentMin = currentTime.Hour * 60 + currentTime.Minute;

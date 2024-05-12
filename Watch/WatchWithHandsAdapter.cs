@@ -1,11 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace Watch
+﻿namespace Watch
 {
+    /// <summary>
+    /// Класс адаптер для стрелочных часов.
+    /// </summary>
     public class WatchWithHandsAdapter : ITimeSettings
     {
         private WatchWithHands _watchWithHands;
@@ -14,6 +11,11 @@ namespace Watch
             _watchWithHands = watchWithHands;
         }
 
+        /// <summary>
+        /// Метод адаптер.
+        /// </summary>
+        /// <param name="currentTime"></param>
+        /// <param name="realTime"></param>
         public void GetTimeSettings(Time currentTime, Time realTime)
         {
             _watchWithHands.GetAngleOfRotation(currentTime, realTime);
